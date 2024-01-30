@@ -1,5 +1,10 @@
 import "./App.css";
 import Chats from "./components/chats/Chats";
+import Customers from "./components/customers/Customers";
+import TopBuyer from "./components/growth-analytics/TopBuyer";
+import TopMonth from "./components/growth-analytics/TopMonth";
+import TopYear from "./components/growth-analytics/TopYear";
+import Growth from "./components/growth/Growth";
 import LostDeals from "./components/lost-deals/LostDeals";
 import NewDeals from "./components/new-deals/NewDeals";
 import QuaterGoal from "./components/quater-goal/QuaterGoal";
@@ -17,7 +22,18 @@ function App() {
           <LostDeals />
           <QuaterGoal />
         </div>
-        <div className="row"></div>
+        <div className="row">
+          <Customers />
+          <div className="growthSection">
+            <Growth />
+            <div className="growthAnalytics">
+              <TopMonth />
+              <TopYear />
+              <TopBuyer />
+
+            </div>
+          </div>
+        </div>
         <div className="row">
           <Chats />
           <TopStates />

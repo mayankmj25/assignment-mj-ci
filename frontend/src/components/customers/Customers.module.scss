@@ -1,0 +1,121 @@
+.customers {
+  display: flex;
+  height: 400px;
+  max-height: 400px;
+  padding: 24px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
+  border-radius: 16px;
+background: var(--White, #FFF);
+}
+
+.heading {
+  display: flex;
+  padding: 0px 24px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.mainHeading {
+  color: var(--Black, #131313);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.2px;
+}
+
+.sortheading {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.sortby {
+  color: var(--Dark-Gray, #454545);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.3px;
+}
+
+.newest {
+  color: var(--Dark-Gray, #454545);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.3px;
+}
+
+.list {
+  display: flex;
+  padding: 0px 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.customer {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+  border-radius: 16px;
+}
+
+.customerDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2px;
+  flex: 1 0 0;
+}
+
+.customerName {
+  color: var(--Black, #131313);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.3px;
+}
+
+.customerSubHeading {
+  color: var(--Dark-Gray, #454545);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.3px;
+}
+
+.button {
+    display: flex;
+padding: 0px 24px;
+align-items: flex-end;
+gap: 8px;
+align-self: stretch;
+}
+
+.buttonText {
+    color: var(--Dark-Orange, #734A00);
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.3px;
+}
