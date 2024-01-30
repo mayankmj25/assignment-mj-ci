@@ -1,0 +1,65 @@
+.topStates {
+  display: flex;
+  min-width: 320px;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 16px;
+  background: var(--White, #fff);
+}
+
+.heading {
+  display: flex;
+  padding-bottom: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  color: var(--Black, #131313);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.2px;
+}
+
+.bar {
+  display: flex;
+  padding: 6px 8px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  border-radius: 4px;
+  background: linear-gradient(
+    90deg,
+    #ffcd71 -2.57%,
+    rgba(255, 205, 113, 0) 112.5%
+  );
+}
+
+.barText {
+  color: var(--Black, #131313);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.barNumber {
+  color: var(--Black, #131313);
+  text-align: right;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
