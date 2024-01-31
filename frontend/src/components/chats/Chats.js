@@ -4,6 +4,8 @@ import userImage1 from '../../assets/profile-images/user2.png'
 import userImage2 from '../../assets/profile-images/user3.png'
 import userImage3 from '../../assets/profile-images/user4.png'
 import userImage4 from '../../assets/profile-images/user5.png'
+import { ReactComponent as GotoIcon } from '../../assets/icons/goto.svg'
+
 
 // remove bg color from 2
 // add the active svg
@@ -35,9 +37,10 @@ const Chats = () => {
         </div>
         </div>
         <div className={styles.allMessagesWrapper}>
-            <div className={styles.allMessages}>
+            <span className={styles.allMessages}>
             All messages
-            </div>
+            </span>
+            <GotoIcon />
         </div>
     </div>
 

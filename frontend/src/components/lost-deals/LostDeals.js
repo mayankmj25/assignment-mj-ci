@@ -1,6 +1,9 @@
 import React from 'react'
 import styles from './LostDeals.module.scss'
 import {ReactComponent as RevenueGrowth} from '../../assets/icons/revenuesIcon.svg'
+import { ReactComponent as GotoIcon } from '../../assets/icons/goto.svg'
+
+
 const LostDeals = () => {
   return (
     <div className={styles.lostDeals}>
@@ -11,7 +14,8 @@ const LostDeals = () => {
         </div>
         <div className={styles.lostDealText}>You closed 96 out of 100 deals</div>
         <div className={styles.lostDealReportWrapper}>
-        <div className={styles.lostDealReport}>All deals</div>
+        <span className={styles.lostDealReport}>All deals</span>
+        <GotoIcon />
         </div>
         
     </div>

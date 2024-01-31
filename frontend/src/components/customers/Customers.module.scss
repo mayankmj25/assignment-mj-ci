@@ -1,7 +1,7 @@
 .customers {
   display: flex;
-  height: 400px;
-  max-height: 400px;
+  height: 518px;
+  // max-height: 400px;
   padding: 24px 0px;
   flex-direction: column;
   align-items: flex-start;
@@ -29,7 +29,7 @@ background: var(--White, #FFF);
   letter-spacing: -0.2px;
 }
 
-.sortheading {
+.sortHeading {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -71,6 +71,22 @@ background: var(--White, #FFF);
   gap: 12px;
   align-self: stretch;
   border-radius: 16px;
+}
+
+.specialCustomer {
+  background: var(--Light-Orange, #FFF7E8);
+}
+
+.customerIcons {
+  display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.customerIconsSet {
+  display: flex;
+align-items: center;
+gap: 4px;
 }
 
 .customerDetails {

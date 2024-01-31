@@ -125,3 +125,15 @@ align-items: flex-start;
 gap: 2px;
 align-self: stretch;
 }
+
+.customer {
+  justify-content: space-between;
+}
+
+.customerData {
+  display: flex;
+  // padding: 12px 20px;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}

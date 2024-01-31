@@ -1,5 +1,8 @@
 import React from "react";
 import styles from "./Customers.module.scss";
+import { ReactComponent as GotoIcon } from "../../assets/icons/goto.svg";
+import { ReactComponent as Line } from "../../assets/icons/line.svg";
+import { ReactComponent as DropDown } from "../../assets/icons/dropdown.svg";
 
 const Customers = () => {
   return (
@@ -7,8 +10,11 @@ const Customers = () => {
       <div className={styles.heading}>
         <div className={styles.mainHeading}>Customers</div>
         <div className={styles.sortHeading}>
-          <span className={styles.sortby}>Sort by</span>
-          <span className={styles.newest}>Newest</span>
+          <div>
+            <span className={styles.sortby}>Sort by </span>
+            <span className={styles.newest}>Newest </span>
+          </div>
+          <DropDown />
         </div>
       </div>
       <div className={styles.list}>
@@ -21,11 +27,14 @@ const Customers = () => {
             </div>
           </div>
         </div>
-        <div className={styles.customer}>
+        <div className={`${styles.customer} ${styles.specialCustomer}`}>
           <div className={styles.customerImage}></div>
           <div className={styles.customerDetails}>
             <div className={styles.customerName}>Maggie Johnson</div>
             <div className={styles.customerSubHeading}>Oasis Organic Inc.</div>
+          </div>
+          <div className={styles.customerIcons}>
+            <Line />
           </div>
         </div>
         <div className={styles.customer}>
@@ -46,8 +55,8 @@ const Customers = () => {
         </div>
       </div>
       <div className={styles.button}>
-      <div className={styles.buttonText}>All customers</div>
-
+        <span className={styles.buttonText}>All customers</span>
+        <GotoIcon />
       </div>
     </div>
   );
