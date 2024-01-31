@@ -70,7 +70,6 @@ const Graph = ({ aggregationType }) => {
         // Specific year data aggregation
         let monthlyData = {};
         rawData.filter(d => d.year === parseInt(aggregationType)).forEach(d => {
-            console.log(d);
           const monthKey = d.month;
           monthlyData[monthKey] = monthlyData[monthKey] || { profit: 0, count: 0 };
           monthlyData[monthKey].profit += d.profit;
@@ -84,12 +83,13 @@ const Graph = ({ aggregationType }) => {
       }
 
     chartData.sort((a, b) => a.timestamp - b.timestamp);
+    console.log(chartData);
     return chartData;
   }, [rawData, aggregationType]);
 
   return (
     <LineChart
-      xAxis={[{ data: processedData.map(d => d.timestamp.toString()) }]}
+      xAxis={[{ type: 'number', data: processedData.map(d => d.timestamp.toString()) }]}
       series={[{ data: processedData.map(d => d.profit) }]}
       width={500}
       height={300}

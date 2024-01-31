@@ -13,6 +13,7 @@ import { ReactComponent as ClosedIcon } from "../../assets/icons/closedIcon.svg"
 import { ReactComponent as Settings } from "../../assets/icons/settings.svg";
 import { ReactComponent as LogOut } from "../../assets/icons/logout.svg";
 import userImage from "../../assets/profile-images/user1.png";
+import { ReactComponent as Search } from "../../assets/figures/search.svg";
 
 // add the closing arrow
 // fix the customer
@@ -28,14 +29,16 @@ const Sidebar = () => {
         </div>
       </div>
       <div className={styles.items}>
-        <div className={styles.search}></div>
+        <div className={styles.search}>
+          <Search />
+        </div>
         <div className={styles.item}>
           <Dashboard />
           <div className={styles.itemName}>Dashboard</div>
         </div>
         <div className={`${styles.item} ${styles.customer}`}>
           <div className={styles.customerData}>
-              <Customers />
+            <Customers />
             <div className={styles.itemName}>Customers</div>
           </div>
           <div className={styles.closedIcon}>
